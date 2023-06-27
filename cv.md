@@ -31,3 +31,60 @@ Due to my love to science, desire for continuous self-education and easy learner
 * Figma
 
 ------
+
+### _Code example:_
+
+Tic-tac-toe game
+
+```
+document.getElementById('app').onclick = function(event) {
+
+    while (i < 3) {
+        if (document.querySelectorAll('input')[i].matches(':checked') == true) {
+            $('.form').addClass('active');
+        }
+        i++;
+    }
+    
+
+    if (document.querySelectorAll('input')[0].matches(':checked') == true) {
+        if (event.target.className == 'app_block') {
+            if (hod%2 == 0) {
+                event.target.innerHTML = 'x';
+                event.target.style.pointerEvents='none';
+            } else {
+                event.target.innerHTML = '0';
+                event.target.style.pointerEvents='for';
+            }
+            hod++;
+            checkWinner();
+        }
+    }
+
+ 
+    if (document.querySelectorAll('input')[1].matches(':checked') == true) {
+        
+        if (event.target.className == 'app_block') {
+            if (hod < 6) {
+                event.target.innerHTML = 'x';
+                event.target.style.pointerEvents='none';
+                hod++;
+                while (hod < 5) {
+                    let allblock = document.getElementsByClassName('app_block');
+                    function randomInteger(min, max) {
+                        let rand = min - 0.5 + Math.random() * (max - min + 1);
+                        return Math.round(rand);
+                    }
+                    let a = randomInteger(0, 8);
+                    if (allblock[a].innerHTML == '') {
+                        allblock[a].innerHTML = '0';
+                        allblock[a].style.pointerEvents='none';
+                        break;
+                    }
+                }
+            };
+            checkWinner();
+        }
+    }
+}
+```
