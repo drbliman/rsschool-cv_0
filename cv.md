@@ -96,3 +96,21 @@ document.getElementById('app').onclick = function(event) {
 [Tic-tac-toe game](https://drbliman.github.io/Tic-tac-toe_v0.1/)
 
 ------
+
+### _Education_
+
+Samara University
+
+* 2015-2019: bachelor's degree - physicist
+
+* 2019-2021: master's degree - laser physics and spectroscopy
+
+------
+
+### _Languages:_
+
+* English - A2
+
+* Russian - Native
+
+------
