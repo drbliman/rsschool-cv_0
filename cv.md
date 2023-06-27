@@ -88,3 +88,11 @@ document.getElementById('app').onclick = function(event) {
     }
 }
 ```
+
+------
+
+### _Projects_
+
+[Tic-tac-toe game](https://drbliman.github.io/Tic-tac-toe_v0.1/)
+
+------
