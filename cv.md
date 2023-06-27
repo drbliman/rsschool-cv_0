@@ -91,13 +91,13 @@ document.getElementById('app').onclick = function(event) {
 
 ------
 
-### _Projects_
+### _Projects:_
 
 [Tic-tac-toe game](https://drbliman.github.io/Tic-tac-toe_v0.1/)
 
 ------
 
-### _Education_
+### _Education:_
 
 Samara University
 
