@@ -97,3 +97,15 @@ $(document).ready(function(){
         $('.arrow1').removeClass('active');
     });
 });
+
+const button = document.querySelector('#mybutton');
+button.addEventListener('click', function (e) {
+    $('.button').toggleClass('active');
+    $('.code').toggleClass('active');
+    $('.button1').toggleClass('active');
+    $('.projects').toggleClass('active');
+    $('.education').toggleClass('active');
+    $('.languages').toggleClass('active');
+    $('.footer').toggleClass('active');
+
+});

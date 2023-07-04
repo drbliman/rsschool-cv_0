@@ -302,3 +302,42 @@ main {
 .li3.active::before {
     left: -40px;
 }
+.code_example {
+    top: 980px;
+}
+.code {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 193px;
+    background-color: rgba(89, 133, 119, 0.5);
+    font-size: 16px;
+    border-radius: 15px 15px 0 0;
+    transition: all 0.3s ease 0s; 
+    overflow: hidden;
+}
+.code.active {
+    height: 900px;
+    transition: all 0.3s ease 0s;
+
+}
+.button {
+    position: absolute;
+    top: 293px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(89, 133, 119, 0.5);
+    border: rgba(255, 255, 255, 0);
+    transition: all 0.3s ease 0s;
+    z-index: 2;
+}
+.button.active {
+    top: 1000px;
+    transition: all 0.3s ease 0s;
+}
+.button1.active {
+    transform: rotate(180deg);
+}
