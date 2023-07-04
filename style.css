@@ -210,50 +210,15 @@ main {
     right: 1%;
     width: 62%;
 }
-/*@media (max-width: 768px) {
-    .content0 {
-        position: absolute;
-        top: 490px;
-        width: 400px;
-        left: 15%;
-    }
-}
-@media (max-width: 480px) {
-    .content0 {
-        position: absolute;
-        top: 490px;
-        width: 80%;
-        left: 10%;
-    }
-}*/
 .content0_0 {
     position: absolute;
     top: 100px;
     left: -15px;
     width: 103.7%;
-    height: 65%;
+    height: 70%;
     background-color: rgba(89, 133, 119, 0.5);
     border-radius: 15px;
 }
-/*@media (max-width: 768px) {
-    .content0_0 {
-        display: flex;
-        width: 210%;
-        top: 90px;
-        height: 400px;
-        left: -15px;
-    }
-}
-@media (max-width: 480px) {
-    .content0_0 {
-        display: flex;
-        top: 70px;
-        width: 210%;
-        height: 83%;
-        left: -15px;
-    }
-}*/
-
 .content1_1,
 .skills1,
 .code_example1 {
