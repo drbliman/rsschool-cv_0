@@ -204,3 +204,136 @@ main {
 .mail1 {
     left: 20px;
 }
+.content0 {
+    position: absolute;
+    top: -10px;
+    right: 1%;
+    width: 62%;
+}
+/*@media (max-width: 768px) {
+    .content0 {
+        position: absolute;
+        top: 490px;
+        width: 400px;
+        left: 15%;
+    }
+}
+@media (max-width: 480px) {
+    .content0 {
+        position: absolute;
+        top: 490px;
+        width: 80%;
+        left: 10%;
+    }
+}*/
+.content0_0 {
+    position: absolute;
+    top: 100px;
+    left: -15px;
+    width: 103.7%;
+    height: 65%;
+    background-color: rgba(89, 133, 119, 0.5);
+    border-radius: 15px;
+}
+/*@media (max-width: 768px) {
+    .content0_0 {
+        display: flex;
+        width: 210%;
+        top: 90px;
+        height: 400px;
+        left: -15px;
+    }
+}
+@media (max-width: 480px) {
+    .content0_0 {
+        display: flex;
+        top: 70px;
+        width: 210%;
+        height: 83%;
+        left: -15px;
+    }
+}*/
+
+.content1_1,
+.skills1,
+.code_example1 {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(89, 133, 119, 1);
+    border-radius: 15px;
+}
+
+.skills,
+.code_example {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 665px;
+    left: 0;
+}
+.skills1 h2,
+.code_example1 h2,
+.projects h2,
+.education h2,
+.languages h2 {
+    position: absolute;
+    top: -35px;
+    padding-left: 20px;
+}
+.skills1 {
+    top: 0px;
+}
+.skills ul,
+.education ul,
+.languages ul {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-size: 24px;
+    list-style: none;
+}
+.skills li,
+.education li,
+.languages li {
+    padding-top: 15px;
+}
+.education li {
+    padding-top: 18px;
+}
+.li1,
+.li2,
+.li3 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    margin-left: -15px;
+    background-color: rgba(89, 133, 119, 0.4);
+    border-radius: 0 15px 15px 0;
+}
+.li2 {
+    width: 600px;
+}
+.li1.active,
+.li2.active,
+.li3.active {
+    left: 35px;
+}
+.li1::before,
+.li2::before,
+.li3::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(89, 133, 119, 0.8);
+    border-radius: 10px 0 0 10px;
+}
+.li1.active::before,
+.li2.active::before,
+.li3.active::before {
+    left: -40px;
+}
