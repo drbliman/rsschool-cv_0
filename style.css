@@ -123,7 +123,7 @@ main {
     left: 15%;
     width: 64px;
     height: 64px;
-    background-image: url(../1/icon/phone1.png);
+    background-image: url(./img/phone1.png);
     background-position: 0px 0px;
     background-repeat: no-repeat;
     transition: all 0.3s ease 0s;
@@ -134,28 +134,28 @@ main {
 .mail {
     top: 200px;
     left: 30%;
-    background-image: url(../1/icon/mail1.svg);
+    background-image: url(./img/mail1.svg);
     background-position: 5px 15px;
 }
 .telegram {
     left: 45%;
-    background-image: url(../1/icon/telegram1.png);
+    background-image: url(./img/telegram1.png);
 }
 .discord {
     left: 75%;
-    background-image: url(../1/icon/discord2.svg);
+    background-image: url(./img/discord2.svg);
 }
 .git {
     top: 200px;
     left: 60%;
-    background-image: url(../1/icon/git1.svg);
+    background-image: url(./img/git1.svg);
 }
 .phone:hover,
 .mail:hover,
 .telegram:hover,
 .git:hover,
 .discord:hover {
-    background-image: url(../1/icon/phone2.png);
+    background-image: url(./img/phone2.png);
     background-position: 10px 10px;
     top: 100px;
     left: 10%;
@@ -169,20 +169,20 @@ main {
 .mail:hover {
     top: 190px;
     left: 19%;
-    background-image: url(../1/icon/mail2.png);
+    background-image: url(./img/mail2.png);
     background-position: 15px 25px;
 }
 .telegram:hover {
-    background-image: url(../1/icon/telegram2.png);
+    background-image: url(./img/telegram2.png);
     left: calc(40% - 100px);
 }
 .git:hover {
     top: 190px;
     left: 50%;
-    background-image: url(../1/icon/git2.png);
+    background-image: url(./img/git2.png);
 }
 .discord:hover {
-    background-image: url(../1/icon/discord1.svg);
+    background-image: url(./img/git1.svg);
     left: calc(70% - 150px);
 }
 .phone1,
