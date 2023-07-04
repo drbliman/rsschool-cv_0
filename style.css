@@ -73,12 +73,7 @@ main {
     top: 110px;
     left: 6%;
     width: 25%;
-    padding-top: 20%;
     background-color: #fff;
-    background-image: url(../1/fb90d9b059c3241424e06dc4a6d5c6b21f12ecd4r1-732-610v2_hq.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 .name {
     position: absolute;
