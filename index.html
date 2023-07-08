@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Vladimir Blinov</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a href="#content1" class="header__linc">Contact information</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="header__linc">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#code_example" class="header__linc">Code example</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="header__linc">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#education" class="header__linc">Education</a>
+                    </li>
+                    <li>
+                        <a href="#languages" class="header__linc">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <img src="./img/avatar.jpg" alt="avatar" class="avatar">
+                <h1 class="name">Vladimir Blinov</h1>
+                <section class="content0">
+                    <h2>Briefly About Myself:</h2>
+                    <p>
+                        Due to my love to science, desire for continuous self-education and easy learner,
+                        I have worked for an amazing three years in the field of education.
+                        However, the desire to move forward led me to the profession of Frontend Developer.
+                        After I completely switched to commercial education, I had enough free time to learn new skills.
+                        After four months of self-study of HTML, CSS and JavaScript I realized that I wanted to do it professionally.
+                        I believe that I will succeed and become a highly skilled professional.
+                    </p>
+                    <div class="content0_0" id="content0_0"></div>
+                </section>
+                <section class="content1">
+                    <div class="linc1" id="content1"></div>
+                    <div class="content1_1"></div>
+                    <h2 class="a">Contact information:</h2>
+                    <ul>
+                        <li>
+                           <div class="phone">
+                                <div class="phone1">
+                                    +7 927 798 96 69
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mail">
+                                <div class="mail1">
+                                    dr.bliman505@gmail.com
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="telegram">
+                                <div class="telegram1">
+                                    @fiz15
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="git">
+                                <div class="git1">
+                                    drbliman
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="discord">
+                                <div class="discord1">
+                                    dr.bliman
+                                </div>
+                            </div> 
+                        </li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <div class="linc2" id="skills"></div>
+                    <div class="skills1">
+                        <h2>Skills:</h2>
+                    </div>
+                    <ul id="ul">
+                        <li>
+                            <div class="li1" id="li1_1"></div>
+                            HTML5, CSS3
+                        </li>
+                        <li>
+                            <div class="li1"  id="li1_2"></div>
+                            JavaScript Basics
+                        </li>
+                        <li>
+                            <div class="li1"  id="li1_3"></div>
+                            Git, GitHub
+                        </li>
+                        <li>
+                            <div class="li1"  id="li1_4"></div>
+                            VS Code
+                        </li>
+                        <li>
+                            <div class="li1"  id="li1_5"></div>
+                            Figma
+                        </li>
+                    </ul>
+                </section>
+                <section class="code_example">
+                    <div class="linc3" id="code_example"></div>
+                    <div class="code_example1">
+                        <h2>Code example:</h2>
+                    </div>
+                    <button class="button" id="mybutton">
+                        <img src="./img/arrow-down-svgrepo-com.svg" alt="arrow" class="button1">
+                    </button>
+                    <pre>
+                        <code class="code">
+                            document.getElementById('app').onclick = function(event) {
+                                while (i &lt; 3) {
+                                    if (document.querySelectorAll('input')[i].matches(':checked') == true) {
+                                        $('.form').addClass('active');
+                                    }
+                                    i++;
+                                }
+                                if (document.querySelectorAll('input')[0].matches(':checked') == true) {
+                                    if (event.target.className == 'app_block') {
+                                        if (hod%2 == 0) {
+                                            event.target.innerHTML = 'x';
+                                            event.target.style.pointerEvents='none';
+                                        } else {
+                                            event.target.innerHTML = '0';
+                                            event.target.style.pointerEvents='for';
+                                        }
+                                        hod++;
+                                        checkWinner();
+                                    }
+                                }
+                                if (document.querySelectorAll('input')[1].matches(':checked') == true) {
+                                    if (event.target.className == 'app_block') {
+                                        if (hod &lt; 6) {
+                                            event.target.innerHTML = 'x';
+                                            event.target.style.pointerEvents='none';
+                                            hod++;
+                                            while (hod &lt; 5) {
+                                                let allblock = document.getElementsByClassName('app_block');
+                                                function randomInteger(min, max) {
+                                                    let rand = min - 0.5 + Math.random() * (max - min + 1);
+                                                    return Math.round(rand);
+                                                }
+                                                let a = randomInteger(0, 8);
+                                                if (allblock[a].innerHTML == '') {
+                                                    allblock[a].innerHTML = '0';
+                                                    allblock[a].style.pointerEvents='none';
+                                                    break;
+                                                }
+                                            }
+                                        };
+                                        checkWinner();
+                                    }
+                                }
+                            }
+                        </code>
+                    </pre>
+                </section>
+                <section class="projects">
+                    <div class="linc4" id="projects"></div>
+                    <h2>Projects:</h2>
+                    <a href="https://drbliman.github.io/Tic-tac-toe_v0.1/" class="projects__linc">Tic-tac-toe game</a>
+                    <a href="https://drbliman.github.io/Tic-tac-toe_v0.1/">
+                        <img src="./img/tic-tac-toe.png" class="game_icon" alt="tic-tac-toe">
+                    </a>
+                </section>
+                <section class="education" id="education">
+                    <h2>Education:</h2>
+                    <p>Samara University</p>
+                    <ul>
+                        <li>
+                            <div class="li2"  id="li2_1"></div>
+                            2015-2019: bachelor’s degree - physicist
+                        </li>
+                        <li>
+                            <div class="li2"  id="li2_2"></div>
+                            2019-2021: master’s degree - laser physics and spectroscopy
+                        </li>
+                        <li>
+                            <div class="li2"  id="li2_3"></div>
+                            RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+                        </li>
+                    </ul>
+                </section>
+                <section class="languages" id="languages">
+                    <h2>Languages:</h2>
+                    <ul>
+                        <li>
+                            <div class="li3"  id="li3_1"></div>
+                            English - A2
+                        </li>
+                        <li>
+                            <div class="li3"  id="li3_2"></div>
+                            Russian - Native
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="footer">
+                <a href="https://rs.school/js/">
+                    <img src="./img/rs_school_js.svg" alt="rs_school_js" class="footer_icon">
+                </a>
+                <div class="footer1">
+                    Vladimir Blinov 2023
+                </div>
+                <a href="https://github.com/drbliman">
+                    <img src="./img/git1.svg" alt="git" class="footer_icon1">
+                </a>
+            </footer>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+            <script src="style.js"></script>
+    </body>
+</html>
