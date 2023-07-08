@@ -1,0 +1,457 @@
+:root {
+    --opacity: 0.2;
+    --opacity1: 0;
+    --heightheader: 135px;
+    --heightheader2: 165px;
+    --top1: 0px;
+    --top2: 0px;
+    --color1: #fff;
+    --ava : 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    width: 1200px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    background-image: url(./img/background.jpg);
+    background-size: 20%;
+}
+h2 {
+    font-size: 36px;
+}
+p {
+    font-size: 22px;
+    padding: 12px;
+}
+header {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    height: var(--heightheader);
+    top: var(--top1);
+    z-index: 50;
+    background-color: rgba(106, 158, 142, var(--opacity));
+    transition: all 0.3s ease 0s;
+}
+.header__list {
+    display: flex;
+    float: right;
+    right: 7.6%;
+    top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    z-index: 2;
+}
+.header__list li {
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+}
+.header__linc {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.header__linc.active {
+    color: #000;
+}
+main {
+    position: absolute;
+    top: 165px;
+    width: 100%;
+}
+.avatar {
+    position: absolute;
+    top: 65px;
+    left: 6%;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.name {
+    position: absolute;
+    height: 30px;
+    width: 250px;
+    top: -50px;
+    left: 6%;
+    font-size: 45px;
+}
+.content0 {
+    position: absolute;
+    top: -10px;
+    right: 1%;
+    width: 62%;
+}
+.content0_0 {
+    position: absolute;
+    top: 100px;
+    left: -15px;
+    width: 103.7%;
+    height: 65%;
+    background-color: rgba(89, 133, 119, 0.5);
+    border-radius: 15px;
+}
+.content1 {
+    position: absolute;
+    top: 375px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+}
+.content1 li {
+    list-style: none;
+}
+.a {
+    position: absolute;
+    left: 5px;
+    padding-left: 20px;
+}
+.phone,
+.mail,
+.telegram,
+.git,
+.discord {
+    position: absolute;
+    top: 110px;
+    left: 15%;
+    width: 64px;
+    height: 64px;
+    background-image: url(./img/phone1.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease 0s;
+    color: rgba(102, 94, 89, 0);
+    font-size: 1px;
+    text-align: center;
+}
+.mail {
+    top: 200px;
+    left: 30%;
+    background-image: url(./img/mail1.png);
+}
+.telegram {
+    left: 45%;
+    background-image: url(./img/telegram1.png);
+}
+.discord {
+    left: 75%;
+    background-image: url(./img/discord1.svg);
+}
+.git {
+    top: 200px;
+    left: 60%;
+    background-image: url(./img/git1.svg);
+}
+.phone:hover,
+.mail:hover,
+.telegram:hover,
+.git:hover,
+.discord:hover {
+    background-image: url(./img/phone2.png);
+    background-position: 10px 10px;
+    top: 100px;
+    left: 10%;
+    width: 350px;
+    height: 85px;
+    background-color: rgba(89, 133, 119, 0.4);
+    border-radius: 40px;
+    color: rgba(102, 94, 89, 1);
+    font-size: 24px;
+}
+.mail:hover {
+    top: 190px;
+    left: 19%;
+    background-image: url(./img/mail2.png);
+}
+.telegram:hover {
+    background-image: url(./img/telegram2.png);
+    left: calc(40% - 100px);
+}
+.git:hover {
+    top: 190px;
+    left: 50%;
+    background-image: url(./img/git2.png);
+}
+.discord:hover {
+    background-image: url(./img/discord2.svg);
+    left: calc(70% - 150px);
+}
+.phone1,
+.mail1,
+.telegram1,
+.git1,
+.discord1 {
+    position: absolute;
+    width: 100%;
+    top: 22px;
+    left: 10px;
+}
+.phone1,
+.mail1 {
+    left: 20px;
+}
+.content0 {
+    position: absolute;
+    top: -10px;
+    right: 1%;
+    width: 62%;
+}
+.content0_0 {
+    position: absolute;
+    top: 100px;
+    left: -15px;
+    width: 103.7%;
+    height: 70%;
+    background-color: rgba(89, 133, 119, 0.5);
+    border-radius: 15px;
+}
+.content1_1,
+.skills1,
+.code_example1 {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(89, 133, 119, 1);
+    border-radius: 15px;
+}
+
+.skills,
+.code_example {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 665px;
+    left: 0;
+}
+.skills1 h2,
+.code_example1 h2,
+.projects h2,
+.education h2,
+.languages h2 {
+    position: absolute;
+    top: -35px;
+    padding-left: 20px;
+}
+.skills1 {
+    top: 0px;
+}
+.skills ul,
+.education ul,
+.languages ul {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-size: 24px;
+    list-style: none;
+}
+.skills li,
+.education li,
+.languages li {
+    padding-top: 15px;
+}
+.education li {
+    padding-top: 18px;
+}
+.li1,
+.li2,
+.li3 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    margin-left: -15px;
+    background-color: rgba(89, 133, 119, 0.4);
+    border-radius: 0 15px 15px 0;
+}
+.li2 {
+    width: 600px;
+}
+.li1.active,
+.li2.active,
+.li3.active {
+    left: 35px;
+}
+.li1::before,
+.li2::before,
+.li3::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(89, 133, 119, 0.8);
+    border-radius: 10px 0 0 10px;
+}
+.li1.active::before,
+.li2.active::before,
+.li3.active::before {
+    left: -40px;
+}
+.code_example {
+    top: 980px;
+}
+.code {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 193px;
+    background-color: rgba(89, 133, 119, 0.5);
+    font-size: 16px;
+    border-radius: 15px 15px 0 0;
+    transition: all 0.3s ease 0s; 
+    overflow: hidden;
+}
+.code.active {
+    height: 900px;
+    transition: all 0.3s ease 0s;
+
+}
+.button {
+    position: absolute;
+    top: 293px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(89, 133, 119, 0.5);
+    border: rgba(255, 255, 255, 0);
+    transition: all 0.3s ease 0s;
+    z-index: 2;
+}
+.button.active {
+    top: 1000px;
+    transition: all 0.3s ease 0s;
+}
+.button1.active {
+    transform: rotate(180deg);
+}
+.projects,
+.education {
+    position: absolute;
+    top: 1330px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(89, 133, 119, 1);
+    border-radius: 15px;
+    transition: all 0.3s ease 0s;
+}
+.projects__linc {
+    position: absolute;
+    text-decoration: none;
+    top: 70px;
+    left: calc(50% - 190px/2);
+    width: 190px;
+    font-size: 28px;
+    color: #000;
+}
+.projects.active {
+    top: 2030px;
+    transition: all 0.3s ease 0s;
+}
+.education {
+    top: 1880px;
+}
+.education.active {
+    top: 2580px;
+}
+.education p {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 28px;
+}
+.education ul {
+    position: absolute;
+    top: 100px;
+    font-size: 22px;
+}
+
+.languages {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 2200px;
+    background-color: rgba(89, 133, 119, 1);
+    border-radius: 15px;
+    transition: all 0.3s ease 0s;
+}
+.languages.active {
+    top: 2900px;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    top: 2565px;
+    background-color: rgba(106, 158, 142, 1);
+    transition: all 0.3s ease 0s;
+}
+footer.active {
+    top: 3265px;
+}
+.footer_icon {
+    position: absolute;
+    left: 10%;
+    top: 55px;
+    width: 100px;
+    height: 40px;
+}
+.footer1 {
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    top: 65px;
+    left: calc(50% - 130px/2);
+}
+.footer_icon1 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 45px;
+    left: 85%;
+}
+.game_icon {
+    position: absolute;
+    width: 640px;
+    height: 360px;
+    top: 130px;
+    left: calc(50% - 640px/2);
+    transition: all 0.3s ease 0s;
+    border-radius: 20px;
+}
+.game_icon:hover {
+    width: 680px;
+    height: 380px;
+    top: 120px;
+    left: calc(50% - 680px/2);
+}
+.linc1,
+.linc2,
+.linc3,
+.linc4,
+.top {
+    position: absolute;
+    margin-top: -70px;
+    width: 1px;
+    height: 1px;
+    display: none;
+    display: inline-block;
+}
+.linc2 {
+    margin-top: -105px;
+}
+.linc4 {
+    margin-top: -108px;
+}
