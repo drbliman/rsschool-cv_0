@@ -8,6 +8,9 @@
     --color1: #fff;
     --ava : 0px;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     position: relative;
     margin: 0 auto;
@@ -17,10 +20,8 @@ body {
     font-style: normal;
     font-weight: 400;
     color: rgba(0, 0, 0, 1);
-    background-color: rgba(160, 191, 181, 1);
-}
-body.lock {
-    overflow: hidden;
+    background-image: url(./img/background.jpg);
+    background-size: 20%;
 }
 h2 {
     font-size: 36px;
@@ -70,10 +71,11 @@ main {
 }
 .avatar {
     position: absolute;
-    top: 110px;
+    top: 65px;
     left: 6%;
     width: 25%;
     background-color: #fff;
+    border-radius: 10px;
 }
 .name {
     position: absolute;
@@ -134,8 +136,7 @@ main {
 .mail {
     top: 200px;
     left: 30%;
-    background-image: url(./img/mail1.svg);
-    background-position: 5px 15px;
+    background-image: url(./img/mail1.png);
 }
 .telegram {
     left: 45%;
@@ -143,7 +144,7 @@ main {
 }
 .discord {
     left: 75%;
-    background-image: url(./img/discord2.svg);
+    background-image: url(./img/discord1.svg);
 }
 .git {
     top: 200px;
@@ -170,7 +171,6 @@ main {
     top: 190px;
     left: 19%;
     background-image: url(./img/mail2.png);
-    background-position: 15px 25px;
 }
 .telegram:hover {
     background-image: url(./img/telegram2.png);
@@ -182,7 +182,7 @@ main {
     background-image: url(./img/git2.png);
 }
 .discord:hover {
-    background-image: url(./img/git1.svg);
+    background-image: url(./img/discord2.svg);
     left: calc(70% - 150px);
 }
 .phone1,
